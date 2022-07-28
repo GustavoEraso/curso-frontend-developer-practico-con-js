@@ -3,12 +3,12 @@ const desktopMenu= document.querySelector(".desktop-menu");
 const hamburguesa= document.querySelector(".menu");
 const menuMobile = document.querySelector(".mobile-menu");
 const carrito= document.querySelector(".navbar-shopping-cart");
-const producDetail = document.querySelector(".product-detail");
+const producDetailLeftAside = document.querySelector(".product-detail-left-aside");
 const cardsContainer = document.querySelector(".cards-container");
 
 menuEmail.addEventListener("click", function(){toggleDesktopMenu(desktopMenu)});
 hamburguesa.addEventListener("click", function(){toggleDesktopMenu(menuMobile)});
-carrito.addEventListener("click", function(){toggleDesktopMenu(producDetail)});
+carrito.addEventListener("click", function(){toggleDesktopMenu(producDetailLeftAside)});
 
 function toggleDesktopMenu(elemento){
     
@@ -22,8 +22,8 @@ function toggleDesktopMenu(elemento){
         if(!desktopMenu.classList.contains("inactive"))
         {desktopMenu.classList.add("inactive")};
 
-        if(!producDetail.classList.contains("inactive"))
-        {producDetail.classList.add("inactive")};
+        if(!producDetailLeftAside.classList.contains("inactive"))
+        {producDetailLeftAside.classList.add("inactive")};
 
         elemento.classList.toggle("inactive");
         }
